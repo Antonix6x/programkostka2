@@ -10,7 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
-        </Grid.ColumnDefinitions>//cps
+        </Grid.ColumnDefinitions>
 
     </Grid>
 </Window>
