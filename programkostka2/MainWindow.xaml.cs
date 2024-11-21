@@ -37,8 +37,16 @@ namespace programkostka2
                 wynikirzutu.Add(wynik);
                 sumarzutu += wynik;
 
-                wynikirzutu.Text = $"Wynik ogólny: {sumarzutu}";
+                
             }
+            wynikirzutu.Text = $"Wynik ogólny: {sumarzutu}";
+            int sumaoczek1 = liczsume1();
+            int sumaoczek2 = liczsume2();
+
+            sumaogolna += sumaoczek1;
+
+            sumaWyniku.Text = $"wynik z pierwszego liczenia: {sumaoczek1}";
+            sumaWyniku2.Text = $"wynik z liczenia zaawansowanego: {sumaoczek2}";
         }
         private void powtorz_Click(object sender, RoutedEventArgs e)
         {
