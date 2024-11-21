@@ -9,14 +9,14 @@
     <Grid RenderTransformOrigin="0.488,0.459" Background="#F5F5DC">
         <Button Content="powtórz rzut" HorizontalAlignment="Left" Margin="426,318,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.517,0.49" Height="55" Width="137" Background="#D2691E" Click="powtorz_Click"/>
         <Button Content="rzut" HorizontalAlignment="Left" Margin="186,318,0,0" VerticalAlignment="Top" Height="55" Width="143" Background="#D2691E" Click="rzut_Click"/>
-        <Label Content="Gra w kosci: Antoni Wittstock" Hoc:\users\student\source\repos\antonix6x\programkostka2\programkostka2\mainwindow.xaml.cs
-c:\users\student\source\repos\antonix6x\programkostka2\programkostka2\mainwindow.xaml
-rizontalAlignment="Center" FontSize="40" Foreground="#A52A2A" Margin="0,0,0,357"/>
+        <Label Content="Gra w kosci: Antoni Wittstock" HorizontalAlignment="Center" FontSize="40" Foreground="#A52A2A" Margin="0,0,0,357"/>
         <Slider x:Name="liczbakostek" Minimum="1" Maximum="9"  Width="120" RenderTransformOrigin="0.219,0.559" Margin="10,140,670,269"/>
-        <Slider x:Name="liczbascian" Minimum="1" Maximum="9" Width="120" RenderTransformOrigin="0.219,0.559" Margin="10,192,670,217"/>
+        <Slider x:Name="liczbascian" Minimum="4" Maximum="10" Width="120" RenderTransformOrigin="0.219,0.559" Margin="10,192,670,217"/>
         <TextBox HorizontalAlignment="Left" Margin="12,117,0,0" TextWrapping="Wrap" Text="Ustaw liczbę kostek" VerticalAlignment="Top" Width="120" Background="#F5F5DC"/>
         <TextBox HorizontalAlignment="Left" Margin="12,169,0,0" TextWrapping="Wrap" Text="Ustaw liczbę ścian" VerticalAlignment="Top" Width="120" Background="#F5F5DC"/>
-        <TextBox HorizontalAlignment="Left" Margin="227,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" Height="70"/>
-
+        <TextBox x:Name="sumaWyniku" HorizontalAlignment="Left" Margin="137,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="58"/>
+        <TextBox x:Name="sumaWyniku2" HorizontalAlignment="Left" Margin="286,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="58"/>
+        <TextBox x:Name="wynikirzutuText" HorizontalAlignment="Left" Margin="438,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="58"/>
+        <TextBox x:Name="sumaOgolem" HorizontalAlignment="Left" Margin="611,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="58"/>
     </Grid>
 </Window>
