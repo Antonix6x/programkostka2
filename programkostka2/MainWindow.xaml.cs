@@ -51,7 +51,17 @@ namespace programkostka2
         private void powtorz_Click(object sender, RoutedEventArgs e)
         {
             sumaogolna = 0;
+
             
+        }
+        private int liczsume1()
+        {
+            int suma = 0;
+            foreach (int wynik in wynikirzutu)
+            {
+                suma += wynik;
+            }
+            return suma;
         }
     }
 }
