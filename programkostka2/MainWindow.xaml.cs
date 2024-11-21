@@ -17,6 +17,7 @@ namespace programkostka2
     public partial class MainWindow : Window
     {
         private int sumaogolna = 0;
+        private List<int> wynikirzutu = new List<int>();
         public MainWindow()
         {
             InitializeComponent();
@@ -28,16 +29,21 @@ namespace programkostka2
             int liczbascian1 = (int)liczbascian.Value;
 
             int sumarzutu = 0;
+            wynikirzutu.Clear();
 
             for (int i = 0; i < liczbakostek1; i++)
             {
                 int wynik = new Random().Next(1, liczbascian1 + 1);
+                wynikirzutu.Add(wynik);
                 sumarzutu += wynik;
+
+                wynikirzutu.Text = $"Wynik ogólny: {sumarzutu}";
             }
         }
         private void powtorz_Click(object sender, RoutedEventArgs e)
         {
             sumaogolna = 0;
+            
         }
     }
 }
