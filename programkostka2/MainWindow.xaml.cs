@@ -16,14 +16,28 @@ namespace programkostka2
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int sumaogolna = 0;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void rzut_Click(object sender, RoutedEventArgs e)
         {
+            int liczbakostek1 = (int)liczbakostek.Value;
+            int liczbascian1 = (int)liczbascian.Value;
 
+            int sumarzutu = 0;
+
+            for (int i = 0; i < liczbakostek1; i++)
+            {
+                int wynik = new Random().Next(1, liczbascian1 + 1);
+                sumarzutu += wynik;
+            }
+        }
+        private void powtorz_Click(object sender, RoutedEventArgs e)
+        {
+            sumaogolna = 0;
         }
     }
 }
