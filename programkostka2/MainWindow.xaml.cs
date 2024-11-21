@@ -63,5 +63,29 @@ namespace programkostka2
             }
             return suma;
         }
+        private int liczsume2()
+        {
+            Dictionary<int, int> liczba = new Dictionary<int, int>();
+            int suma = 0;
+
+            foreach (int wynik in wynikirzutu)
+            {
+                if (liczba.ContainsKey(wynik))
+                {
+                    liczba[wynik]++;
+                }
+                else
+                {
+                    liczba[wynik] = 1;
+                }
+            }
+            foreach (var obie in liczba)
+            {
+                if (obie.Value >= 2)
+                {
+                    suma += obie.Key * obie.Value;
+                }
+            }
+        }
     }
 }
