@@ -6,11 +6,14 @@
         xmlns:local="clr-namespace:programkostka2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0*"/>
-        </Grid.ColumnDefinitions>
+    <Grid RenderTransformOrigin="0.48,0.502" Background="#F5F5DC">
+        <Button Content="powtórz rzut" HorizontalAlignment="Left" Margin="538,298,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.517,0.49" Height="40" Width="99" Background="#D2691E" Click="Button_Click"/>
+        <Button Content="rzut" HorizontalAlignment="Left" Margin="206,298,0,0" VerticalAlignment="Top" Height="40" Width="92" Background="#D2691E" Click="Button_Click"/>
+        <Label Content="Gra w kosci: Antoni Wittstock" HorizontalAlignment="Center" FontSize="40" Foreground="#A52A2A"/>
+        <Slider Width="120" RenderTransformOrigin="0.219,0.559" Margin="10,140,670,269"/>
+        <Slider Width="120" RenderTransformOrigin="0.219,0.559" Margin="10,192,670,217"/>
+        <TextBox HorizontalAlignment="Left" Margin="12,117,0,0" TextWrapping="Wrap" Text="Ustaw liczbę kostek" VerticalAlignment="Top" Width="120" Background="#F5F5DC"/>
+        <TextBox HorizontalAlignment="Left" Margin="12,169,0,0" TextWrapping="Wrap" Text="Ustaw liczbę ścian" VerticalAlignment="Top" Width="120" Background="#F5F5DC"/>
 
     </Grid>
 </Window>
