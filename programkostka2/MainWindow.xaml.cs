@@ -86,6 +86,7 @@ namespace programkostka2
                     suma += obie.Key * obie.Value;
                 }
             }
+            return suma;
         }
     }
 }
